@@ -18,7 +18,9 @@ Ext.application({
     ],
 
     views: [
-        'Main'
+        'Main',
+        'Viewport',
+        'NavigationMenu'
     ],
 
     icon: {
@@ -44,7 +46,8 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('RT.view.Main'));
+        // Ext.Viewport.add(Ext.create('RT.view.Main'));
+        Ext.Viewport.add(Ext.create('RT.view.Viewport'));
     },
 
     onUpdated: function() {

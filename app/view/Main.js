@@ -1,6 +1,7 @@
 Ext.define('RT.view.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'main',
+
     requires: [
         'Ext.TitleBar',
         'Ext.Video'
@@ -19,7 +20,22 @@ Ext.define('RT.view.Main', {
                 items: {
                     docked: 'top',
                     xtype: 'titlebar',
-                    title: 'Welcome to Sencha Touch 2'
+                    title: 'Revival Times',
+
+                    items: [
+                        {
+                            name: 'BTNslidenav',
+                            iconMask: true,
+                            iconCls: 'list',
+                            ui: 'plain',
+                        },
+                        {
+                            iconMask: true,
+                            iconCls: 'user',
+                            ui: 'plain',
+                            align: 'right'
+                        }
+                    ]
                 },
 
                 html: [
