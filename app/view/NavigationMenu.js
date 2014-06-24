@@ -1,6 +1,6 @@
 Ext.define('RT.view.NavigationMenu', {
 	extend: 'Ext.List',
-	xtype: 'navmenu',
+	xtype: 'navlist',
 
 	config: {
 		cls: 'nav-list',
