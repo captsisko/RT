@@ -14,14 +14,14 @@ Ext.define('RT.view.Viewport', {
 			{
 				xtype: 'navlist',
 				width: 250,
-                            flex: 1,
+                            // flex: 1,
 			},
 			{
 				xtype: 'main',
 				cls: 'slide',
 				width: '100%',
 				html: 'Slide Testing ...',
-                            flex: 2,
+                            // flex: 2,
             }
 		]
 	}
