@@ -4,12 +4,19 @@ Ext.define('RT.controller.SlideNav', {
 	config: {
 
 		refs: {
-			main: 'main'
+			main: 'main',
+			navlist: 'navlist'
 		},
 
 		control: {
 			"button[name='BTNslidenav']": {
 				tap: 'navToggle'
+			},
+
+			navlist: {
+				itemtap: function(list, index, target, record){
+					this.navToggle();
+				}
 			}
 		},
 
