@@ -7,7 +7,7 @@ Ext.define('RT.view.Viewport', {
 	],
 
 	config: {
-		fullscreen: true,
+		fullscreen: false,
 		layout: 'hbox',
 
 		items: [

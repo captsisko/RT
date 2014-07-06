@@ -20,11 +20,29 @@ Ext.application({
     views: [
         'Main',
         'Viewport',
-        'NavigationMenu'
+        'NavigationMenu',
+        
+        'Content.Messages',
+        'Content.MessagesList',
+        'Content.MessageDetails',
+
+        'Sections.Sections',
+        'Sections.SectionsList',
     ],
 
     controllers: [
-        'SlideNav'
+        'SlideNav',
+        'MessagesItemTap'
+    ],
+
+    stores: [
+        'Categories',
+        'Messages',
+    ],
+
+    models: [
+        'Category',
+        'Message',
     ],
 
     icon: {

@@ -16,6 +16,25 @@ Ext.define('RT.controller.SlideNav', {
 			navlist: {
 				itemtap: function(list, index, target, record){
 					this.navToggle();
+					/*console.log('LIST: ' + list);
+					console.log('INDEX: ' + index);
+					console.log('TARGET: ' + target);
+					console.log('RECORD: ' + record);*/
+
+					switch(index){
+						case 0:
+							this.getMain().setActiveItem(0);
+						break;
+						case 1:
+							// this.getMain().setActiveItem({xtype:'content_messages'});
+							this.getMain().setActiveItem(1);
+						break;
+						case 2:
+							this.getMain().setActiveItem(2);
+						break;
+						default:
+						break;
+					}
 				}
 			}
 		},

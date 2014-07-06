@@ -7,10 +7,13 @@ Ext.define('RT.view.NavigationMenu', {
 		itemTpl: '{title}',
 		data: [
 			{
-				title: 'Test#1'
+				title: 'Home'
 			},
 			{
-				title: 'Test#2'
+				title: 'Messages'
+			},
+			{
+				title: 'Sections'
 			}
 		]
 	}
