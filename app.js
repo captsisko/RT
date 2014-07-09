@@ -21,28 +21,36 @@ Ext.application({
         'Main',
         'Viewport',
         'NavigationMenu',
-        
+
         'Content.Messages',
         'Content.MessagesList',
         'Content.MessageDetails',
 
         'Sections.Sections',
         'Sections.SectionsList',
+
+        'Sections.Articles',
+        'Sections.ArticlesList',
+        'Sections.ArticleDetails',
     ],
 
     controllers: [
+        'Article',
+        'Sections',
         'SlideNav',
-        'MessagesItemTap'
+        'MessagesItemTap',
     ],
 
     stores: [
         'Categories',
         'Messages',
+        'Articles',
     ],
 
     models: [
         'Category',
         'Message',
+        'Article',
     ],
 
     icon: {

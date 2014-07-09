@@ -51,7 +51,10 @@ Ext.define('RT.view.Main', {
                 xtype: 'sections'
             },
             /*{
-                xtype: 'messagedetails'
+                xtype: 'articles'
+            },*/
+            /*{
+                xtype: 'articledetails'
             }*/
         ]
     }

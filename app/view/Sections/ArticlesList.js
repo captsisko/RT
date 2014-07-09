@@ -1,7 +1,7 @@
-Ext.define('RT.view.Sections.SectionsList', {
+Ext.define('RT.view.Sections.ArticlesList', {
 	// extend: 'Ext.tab.Panel',
     extend: 'Ext.List',
-	xtype: 'sectionslist',
+	xtype: 'articleslist',
 
     requires: [
         'Ext.plugin.ListPaging',
@@ -45,8 +45,8 @@ Ext.define('RT.view.Sections.SectionsList', {
             ]
         },
 
-        store: 'Categories',
-        itemTpl: '{term}',
+        store: 'Articles',
+        itemTpl: '{title}',
 
         /*plugins: [
             {
@@ -58,7 +58,7 @@ Ext.define('RT.view.Sections.SectionsList', {
         /*listeners: {
             itemtap: function(data, index){
                 var message = data.getStore().getAt(index);
-                console.log('Section tap' + '['+index+']: ' + message.getData().tid);
+                console.log('message tap' + '['+index+']: ' + message.getData().title);
                 // this.fireEvent('disclose', '', message);
 
                 // Ext.Viewport.setActiveItem('messagedetails');

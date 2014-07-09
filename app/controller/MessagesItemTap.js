@@ -16,6 +16,7 @@ Ext.define('RT.controller.MessagesItemTap', {
 	}, // config
 
 	showMessage: function(list, record){
+		console.log('Show-Message responding on message item tap!');
 		this.getMessages().push({
 			xtype: 'messagedetails',
 			title: record.getData().title + ' by ' + record.teacher(),

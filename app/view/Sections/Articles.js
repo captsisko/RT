@@ -1,9 +1,9 @@
-Ext.define('RT.view.Sections.Sections', {
+Ext.define('RT.view.Sections.Articles', {
 	extend: 'Ext.navigation.View',
-	xtype: 'sections',
+	xtype: 'articles',
 
 	config: {
-                title: 'Sections',
+                title: 'Articles',
                 iconCls: 'user',
 
                 /**********
@@ -11,7 +11,7 @@ Ext.define('RT.view.Sections.Sections', {
                  * comes from sectionsList
                  **********/
                 items: {
-        	       xtype: 'sectionslist',
+        	       xtype: 'articleslist',
         	}
 	}
 
